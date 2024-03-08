@@ -10,6 +10,12 @@ export default defineConfig({
       name: 'stopmarkdown',
       formats: ['es', 'cjs', 'umd'],
       fileName: 'index'
+    },
+    rollupOptions: {
+      external: ['stophtml'],
+      output: {
+        globals: { stophtml: 'stophtml' }
+      }
     }
   },
   test: {
