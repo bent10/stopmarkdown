@@ -46,7 +46,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "stophtml": "^1.0.1"
+    "stophtml": "^1.0.2"
   },
   "devDependencies": {
     "doogu": "3.2.12",

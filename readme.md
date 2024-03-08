@@ -60,7 +60,7 @@ Returns an array of text segments extracted from the Markdown string.
 
 - [boox](https://github.com/bent10/boox) – Performing full-text search across multiple documents by combining [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) score with [inverted index](https://en.wikipedia.org/wiki/Inverted_index) weight.
 - [stophtml](https://github.com/bent10/stophtml) – Extracts plain text from an HTML string.
-- [to-plaintext](https://github.com/bent10/to-plaintext) – Convert hypertext (e.g., HTML, Markdown) strings into plain text for natural language processing (NLP) normalization.
+- [nomark](https://github.com/bent10/nomark) – Transforms hypertext strings (e.g., HTML, Markdown) into plain text for natural language processing (NLP) normalization.
 - [stopword](https://github.com/fergiemcdowall/stopword) – Allows you to strip stopwords from an input text (supports a ton of languages).
 
 ## Contributing
