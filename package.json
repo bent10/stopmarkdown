@@ -1,0 +1,68 @@
+{
+  "name": "stopmarkdown",
+  "description": "Extracts plain text from Markdown strings",
+  "version": "0.0.0-development",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Beni Arisandi (https://stilearning.com)",
+  "repository": "https://github.com/bent10/stopmarkdown",
+  "bugs": "https://github.com/bent10/stopmarkdown/issues",
+  "license": "MIT",
+  "keywords": [
+    "markdown",
+    "plaintext",
+    "text",
+    "token",
+    "tokenize",
+    "strip",
+    "nlp"
+  ],
+  "type": "module",
+  "main": "dist/index.cjs",
+  "browser": "dist/index.umd.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "readme.md",
+    "license"
+  ],
+  "scripts": {
+    "start": "vite",
+    "dev": "vite build --watch",
+    "build": "vite build && npm run types",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "types": "tsc -d --emitDeclarationOnly --outDir ./dist",
+    "lint": "tsc --noEmit && eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "stophtml": "^1.0.1"
+  },
+  "devDependencies": {
+    "doogu": "3.2.12",
+    "marked": "^12.0.1",
+    "vite-plugin-resolve-umd-format": "^1.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/doogu/eslint"
+  },
+  "prettier": "doogu/prettier.json",
+  "release": {
+    "extends": "doogu/release.config.js"
+  }
+}
