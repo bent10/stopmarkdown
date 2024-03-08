@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/bent10/stopmarkdown/compare/v1.0.1...v1.0.2) (2024-03-08)
+
+
+### Bug Fixes
+
+* **deps:** ncu ([14366f9](https://github.com/bent10/stopmarkdown/commit/14366f95cc51b64c6f28908e7fdd1ed1fe450c13))
+
 ## [1.0.1](https://github.com/bent10/stopmarkdown/compare/v1.0.0...v1.0.1) (2024-03-08)
 
 
