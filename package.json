@@ -49,8 +49,8 @@
     "stophtml": "^1.0.2"
   },
   "devDependencies": {
-    "doogu": "3.2.12",
-    "marked": "12.0.1",
+    "doogu": "3.2.13",
+    "marked": "12.0.2",
     "vite-plugin-resolve-umd-format": "1.0.0"
   },
   "config": {
