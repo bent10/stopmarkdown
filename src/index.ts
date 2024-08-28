@@ -24,6 +24,8 @@ export default function stopmarkdown(input: string) {
    */
   function walkTokens(tokenList: Token[]) {
     tokenList.forEach(token => {
+      let hpText: string, table: Tokens.Table, tableHeaderCols: string[]
+
       switch (token.type) {
         case 'code':
           segments.push(token.text)
@@ -36,7 +38,7 @@ export default function stopmarkdown(input: string) {
           break
         case 'heading':
         case 'paragraph':
-          const hpText = serializeInlineTokens(token.tokens)
+          hpText = serializeInlineTokens(token.tokens)
 
           if (hpText) {
             segments.push(
@@ -50,8 +52,8 @@ export default function stopmarkdown(input: string) {
           }
           break
         case 'table':
-          const table = token as Tokens.Table
-          const tableHeaderCols: string[] = []
+          table = <Tokens.Table>token
+          tableHeaderCols = []
 
           table.header.forEach(col => {
             tableHeaderCols.push(serializeInlineTokens(col.tokens))

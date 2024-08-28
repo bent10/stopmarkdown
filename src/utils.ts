@@ -8,6 +8,7 @@ import type { Token } from 'marked'
  */
 export function serializeInlineTokens(tokens: Token[] = []) {
   const chunks: string[] = []
+  let imgText: string
 
   for (const token of tokens) {
     switch (token.type) {
@@ -27,9 +28,9 @@ export function serializeInlineTokens(tokens: Token[] = []) {
         chunks.push(token.text)
         break
       case 'image':
-        const imgText = token.title || token.text
+        imgText = token.title || token.text
         if (imgText) {
-          chunks.push(token.title || token.text)
+          chunks.push(imgText)
         }
         break
       // inline HTML is disregarded because it merely consists of HTML tags
