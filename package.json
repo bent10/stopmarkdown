@@ -46,11 +46,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "stophtml": "^1.0.2"
+    "stophtml": "^1.0.3"
   },
   "devDependencies": {
-    "doogu": "3.2.13",
-    "marked": "14.0.0",
+    "doogu": "4.0.4",
+    "marked": "14.1.0",
     "vite-plugin-resolve-umd-format": "1.0.0"
   },
   "config": {
@@ -58,10 +58,7 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "eslintConfig": {
-    "extends": "./node_modules/doogu/eslint"
-  },
-  "prettier": "doogu/prettier.json",
+  "prettier": "doogu/prettier.config.js",
   "release": {
     "extends": "doogu/release.config.js"
   }
