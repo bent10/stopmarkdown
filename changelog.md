@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/bent10/stopmarkdown/compare/v1.0.2...v1.0.3) (2024-08-28)
+
+
+### Bug Fixes
+
+* **deps:** ncu ([44fa967](https://github.com/bent10/stopmarkdown/commit/44fa9677f22664ccb6241331ee3bb1f5d6be022a))
+* resolve eslint errors ([9af1858](https://github.com/bent10/stopmarkdown/commit/9af1858da06f323c76a140acb581f52c857fe016))
+
 ## [1.0.2](https://github.com/bent10/stopmarkdown/compare/v1.0.1...v1.0.2) (2024-03-08)
 
 
